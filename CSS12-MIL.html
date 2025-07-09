@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>MIL project 2025</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #0066cc;
+      color: white;
+      padding: 30px 20px;
+      text-align: center;
+    }
+    header p.subtext {
+      font-size: 18px;
+      color: #d0eaff;
+    }
+    nav {
+      background: #004c99;
+      padding: 10px;
+      text-align: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 14px;
+      padding: 8px 14px;
+      background: #005bb5;
+      border-radius: 5px;
+      transition: background 0.3s;
+    }
+    nav a:hover {
+      background: #003f80;
+    }
+    section {
+      padding: 30px 20px;
+    }
+    h2 {
+      color: #004c99;
+      text-align: center;
+    }
+    .media-example {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      margin-top: 20px;
+    }
+    .media-card {
+      background: white;
+      border: 1px solid #ddd;
+      width: 100%;
+      max-width: 320px;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      transition: transform 0.2s;
+    }
+    .media-card:hover {
+      transform: scale(1.02);
+    }
+    .media-card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+    .media-card div {
+      padding: 10px;
+    }
+    #quiz {
+      background: #ffffff;
+      border-radius: 10px;
+      padding: 20px;
+      max-width: 600px;
+      margin: 0 auto;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    #quiz input[type="radio"] {
+      margin-right: 8px;
+    }
+    #quiz button {
+      background-color: #0066cc;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      margin-top: 10px;
+      cursor: pointer;
+      border-radius: 5px;
+      width: 100%;
+    }
+    #quiz button:hover {
+      background-color: #004999;
+    }
+    footer {
+      background-color: #0066cc;
+      color: white;
+      text-align: center;
+      padding: 10px;
+      font-size: 14px;
+    }
+
+    /* Media Query for smaller screens */
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 22px;
+      }
+      header p.subtext {
+        font-size: 16px;
+      }
+      nav a {
+        font-size: 13px;
+        padding: 6px 10px;
+      }
+      #quiz {
+        padding: 15px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Welcome to our MIL Project</h1>
+  <p class="subtext">From CSS 12 SCNHS</p>
+</header>
+
+<nav>
+  <a href="#intro">Introduction</a>
+  <a href="#types">Types of Media</a>
+  <a href="#importance">Importance</a>
+  <a href="#quiz-section">Quiz</a>
+</nav>
+
+<section id="intro">
+  <h2>What is MIL?</h2>
+  <p>
+    Media and Information Literacy (MIL) helps people critically evaluate media content,
+    identify sources of information, and create responsible media messages. It empowers learners
+    to use media wisely and ethically.
+  </p>
+</section>
+
+<section id="types">
+  <h2>Types of Media with Examples</h2>
+  <div class="media-example">
+
+    <!-- Print Media -->
+    <div class="media-card">
+      <img src="libraries.webp" alt="Newspaper">
+      <div>
+        <h3>Print Media</h3>
+        <p><strong>Example:</strong> Newspaper (e.g. Philippine Daily Inquirer)</p>
+      </div>
+    </div>
+
+    <!-- Broadcast Media -->
+    <div class="media-card">
+      <img src="news.webp" alt="TV broadcast">
+      <div>
+        <h3>Broadcast Media</h3>
+        <p><strong>Example:</strong> Television (e.g. GMA News, CNN)</p>
+      </div>
+    </div>
+
+    <!-- Digital Media -->
+    <div class="media-card">
+      <img src="facebook.jpeg" alt="Social Media Icons">
+      <div>
+        <h3>Digital Media</h3>
+        <p><strong>Example:</strong> Social Media (e.g. Facebook, YouTube)</p>
+      </div>
+    </div>
+
+    <!--  Outdoor Media -->
+    <div class="media-card">
+      <img src="posters.jpeg" alt="Billboard">
+      <div>
+        <h3>Outdoor Media</h3>
+        <p><strong>Example:</strong> Billboard advertisements</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<section id="importance">
+  <h2>Why MIL is Important</h2>
+  <ol>
+    <li>Helps identify trustworthy information sources.</li>
+    <li>Teaches responsible use of media and technology.</li>
+    <li>Enhances digital citizenship and critical thinking.</li>
+    <li>Prepares students for active participation in society.</li>
+  </ol>
+</section>
+
+<section id="quiz-section">
+  <h2>Quick Quiz</h2>
+  <div id="quiz">
+    <p><strong>1. What type of media is Facebook?</strong></p>
+    <label><input type="radio" name="q1" value="a"> Print Media</label><br>
+    <label><input type="radio" name="q1" value="b"> Broadcast Media</label><br>
+    <label><input type="radio" name="q1" value="c"> Digital Media</label><br><br>
+
+    <p><strong>2. Which of the following is an example of Print Media?</strong></p>
+    <label><input type="radio" name="q2" value="a"> YouTube</label><br>
+    <label><input type="radio" name="q2" value="b"> Newspaper</label><br>
+    <label><input type="radio" name="q2" value="c"> Radio</label><br><br>
+
+    <button onclick="checkQuiz()">Submit Answers</button>
+    <p id="quiz-result"></p>
+  </div>
+</section>
+
+<footer>
+  <p>Project by Jastine N. Ergino and Rhys Electona | &copy; 2025</p>
+</footer>
+
+<script>
+  function checkQuiz() {
+    let score = 0;
+    const answer1 = document.querySelector('input[name="q1"]:checked');
+    const answer2 = document.querySelector('input[name="q2"]:checked');
+
+    if (answer1 && answer1.value === "c") score++;
+    if (answer2 && answer2.value === "b") score++;
+
+    const result = document.getElementById("quiz-result");
+    result.textContent = "You got " + score + " out of 2 correct!";
+  }
+</script>
+
+</body>
+</html>
+<script>
+const answer2 = document.querySelector('input[name="q2"]:checked');
+
+    if (answer1 && answer1.value === "c") score++;
+    if (answer2 && answer2.value === "b") score++;
+
+    const result = document.getElementById("quiz-result");
+    result.textContent = "You got " + score + " out of 2 correct!";
+  
+  ontent = "You got " + score + " out of 2 correct!";
+  
+</script>
+
+</body>
+</html>
+
+</script>
+
+</body>
+</html>
